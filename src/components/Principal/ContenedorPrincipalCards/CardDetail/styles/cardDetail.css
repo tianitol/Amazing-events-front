@@ -1,0 +1,33 @@
+.card-detail{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em;
+    color: #041122;
+    width: 95%;
+}
+
+.card-img{
+    width: 70%;
+}
+
+.card-body{
+    width: 30%;
+    padding: 1em;
+}
+
+@media screen and (max-width: 700px) {
+
+    .card-detail{
+        flex-direction: column;
+    }
+
+    .card-body{
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .card-img{
+        width: 90%;
+        padding-top: 1em;
+    }
+}

@@ -1,0 +1,27 @@
+.div-contenedor-principal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    background-color: #041122;
+
+}
+
+@media screen and (max-width: 550px) {
+    .div-contenedor-principal {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+  
+  @media screen and (min-width: 550px) and (max-width: 845px) {
+    .div-contenedor-principal {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+  
+  @media screen and (min-width: 845px) and (max-width: 1200px) {
+    .div-contenedor-principal {
+      grid-template-columns: repeat(3, auto);
+    }
+  
+  }

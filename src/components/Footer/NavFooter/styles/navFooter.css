@@ -1,0 +1,12 @@
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: flex-start;
+    color: #81c784;
+}
+
+.nav-footer > h4 {
+    padding-left: 2em;
+    font-size: 2em;
+}

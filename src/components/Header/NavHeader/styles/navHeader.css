@@ -1,0 +1,23 @@
+.nav-header{
+    width: 100%;
+}
+
+.me-auto > a{
+    padding: 0 2em;
+    color: #041122;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 550px) {
+    .me-auto > a {
+      padding: 0 0.5em;
+      font-size: 13px;
+    }
+  }
+  
+  @media screen and (min-width: 550px) and (max-width: 845px) {
+    .me-auto > a {
+        padding: 0 0.7em;
+      }
+  }
+  
