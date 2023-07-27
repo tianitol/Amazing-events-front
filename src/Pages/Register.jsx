@@ -22,13 +22,6 @@ const Register = () => {
     let passValue = passwordRef.current.value;
 
     axios.defaults.withCredentials = true;
-    // console.log(
-    //   "datos usuario: ",
-    //   usernameRef.current.value,
-    //   emailRef.current.value,
-    //   rolRef.current.value,
-    //   passwordRef.current.value
-    // );
     axios
       .post("http://localhost:3000/api/customers", {
         username: usernameValue,
@@ -42,10 +35,8 @@ const Register = () => {
         window.location.reload();
       })
       .catch((err) => {
+        //console.error(err.response.data);
         alert(err.response.data);
-        // axios.defaults.withCredentials
-        //   ? (window.location.href = "/register")
-        //   : navigate("/login");
       });
   };
 
